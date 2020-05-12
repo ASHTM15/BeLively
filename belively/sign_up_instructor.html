@@ -1,0 +1,105 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>BeLively By UCR Students</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+    <body class="is-preload">
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Main -->
+            <div id="main">
+
+                <div class="inner">
+                    <!-- Header -->
+                    <header id="header">
+                        <a href="index.html" class="logo"><strong>BeLively</strong> by UCR Students</a>
+                    </header>
+                    <section id="banner">
+                        <form method="post" action="#">
+                            <h2>Instructor Sign Up</h2>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="text" name="name" id="name_instructor" value="" placeholder="Name" />
+                                    </div>
+
+                                    <div class="col-6">
+                                        <input type="email" name="email_instructor" id="email_instructor" value="" placeholder="Email" />
+                                    </div>
+                                </div>
+                                <h3></h3>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="text" name="password" id="password_instructor" value="" placeholder="Password" />
+                                    </div>
+
+                                    <div class="col-6">
+                                        <input type="text" name="confirm_password" id="password_2_instructor" value="" placeholder="Confirm Password" />
+                                    </div>
+                                </div>
+                                <h3></h3>
+                                <div class="col-6">
+                                    <div class="col-6">
+                                        <input type="text" name="instructor_ID" id="instructor_ID" value="" placeholder="Identification Number" />
+                                    </div>
+                                </div>
+                                <h3></h3>
+                                <ul class="actions">
+                                    <li><a class="button primary" onclick="SignUp; return false;">Submit</a></li>
+                                </ul>
+
+                            </div>
+                        </form>
+                    </section>
+                    <!-- Banner -->
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyCBaVew8thY-alSGeEUlRsKPFXIHs1Hl7c",
+                authDomain: "belively-e6cdc.firebaseapp.com",
+                databaseURL: "https://belively-e6cdc.firebaseio.com",
+                projectId: "belively-e6cdc",
+                storageBucket: "belively-e6cdc.appspot.com",
+                messagingSenderId: "830591311425",
+                appId: "1:830591311425:web:51b19f757b9df919ef70c0",
+                measurementId: "G-V37JV4KFWY"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+            var db = firebase.firestore();
+        </script>
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/SignUpStudent.js"></script>
+        
+
+    </body>
+</html>
