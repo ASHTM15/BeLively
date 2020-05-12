@@ -1,13 +1,13 @@
-[debug] [2020-05-12T20:15:01.121Z] ----------------------------------------------------------------------
-[debug] [2020-05-12T20:15:01.123Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jacqu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2020-05-12T20:15:01.124Z] CLI Version:   8.2.0
-[debug] [2020-05-12T20:15:01.124Z] Platform:      win32
-[debug] [2020-05-12T20:15:01.124Z] Node Version:  v12.13.0
-[debug] [2020-05-12T20:15:01.125Z] Time:          Tue May 12 2020 13:15:01 GMT-0700 (Pacific Daylight Time)
-[debug] [2020-05-12T20:15:01.125Z] ----------------------------------------------------------------------
-[debug] [2020-05-12T20:15:01.125Z] 
-[debug] [2020-05-12T20:15:01.130Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-05-12T20:15:01.131Z] > authorizing via signed-in user
+[debug] [2020-05-12T20:23:14.338Z] ----------------------------------------------------------------------
+[debug] [2020-05-12T20:23:14.341Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jacqu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-05-12T20:23:14.341Z] CLI Version:   8.2.0
+[debug] [2020-05-12T20:23:14.341Z] Platform:      win32
+[debug] [2020-05-12T20:23:14.341Z] Node Version:  v12.13.0
+[debug] [2020-05-12T20:23:14.342Z] Time:          Tue May 12 2020 13:23:14 GMT-0700 (Pacific Daylight Time)
+[debug] [2020-05-12T20:23:14.343Z] ----------------------------------------------------------------------
+[debug] [2020-05-12T20:23:14.343Z] 
+[debug] [2020-05-12T20:23:14.349Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-05-12T20:23:14.350Z] > authorizing via signed-in user
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -17,7 +17,7 @@
 
 You're about to initialize a Firebase project in this directory:
 
-  D:\GitHub\BeLively
+  D:\GitHub\BeLively\belively
 
 [info] 
 === Project Setup
@@ -26,59 +26,26 @@ You're about to initialize a Firebase project in this directory:
 [info] You can create multiple project aliases by running firebase use --add, 
 [info] but for now we'll just set up a default project.
 [info] 
-[debug] [2020-05-12T20:16:35.317Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2020-05-12T20:16:35.317Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2020-05-12T20:16:35.522Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 12 May 2020 20:16:35 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2020-05-12T20:16:35.529Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
- 
-[debug] [2020-05-12T20:16:35.839Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 12 May 2020 20:16:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[info] i  Using project cs180-assignment-1-41901 (CS180 Assignment 1)
-[info] 
-=== Database Setup
-[info] 
-[info] Firebase Realtime Database Rules allow you to define how your data should be
-[info] structured and when your data can be read from and written to.
-[info] 
-[debug] [2020-05-12T20:16:47.353Z] >>> HTTP REQUEST GET https://cs180-assignment-1-41901.firebaseio.com/.settings/rules.json  
- 
-[debug] [2020-05-12T20:16:47.998Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Tue, 12 May 2020 20:16:47 GMT","content-type":"application/json; charset=utf-8","content-length":"121","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
-[debug] [2020-05-12T20:16:48.125Z] Error: EISDIR: illegal operation on a directory, open 'D:\GitHub\BeLively'
-    at Object.openSync (fs.js:440:3)
-    at Object.writeFileSync (fs.js:1265:35)
-    at Config.writeProjectFile (C:\Users\jacqu\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:155:8)
-    at C:\Users\jacqu\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:25:23
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project.
+[debug] [2020-05-12T20:23:36.742Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+ {"projectId":"firebase_BeLively","name":"y"}
+[debug] [2020-05-12T20:23:36.963Z] <<< HTTP RESPONSE 400 {"vary":"X-Origin, Referer, Origin,Accept-Encoding","content-type":"application/json; charset=UTF-8","date":"Tue, 12 May 2020 20:23:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=60","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-05-12T20:23:36.964Z] <<< HTTP RESPONSE BODY {"error":{"code":400,"message":"Request contains an invalid argument.","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"project_id","description":"project_id contains invalid characters"},{"field":"display_name","description":"project display name must be at least 4 characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2020-05-12T20:23:36.965Z] HTTP Error: 400, Request contains an invalid argument.
+[debug] [2020-05-12T20:23:37.113Z] FirebaseError: HTTP Error: 400, Request contains an invalid argument.
+    at module.exports (C:\Users\jacqu\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Request._callback (C:\Users\jacqu\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:41:35)
+    at Request.self.callback (C:\Users\jacqu\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:210:5)
+    at Request.EventEmitter.emit (domain.js:476:20)
+    at Request.<anonymous> (C:\Users\jacqu\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1154:10)
+    at Request.emit (events.js:210:5)
+    at Request.EventEmitter.emit (domain.js:476:20)
+    at IncomingMessage.<anonymous> (C:\Users\jacqu\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:1076:12)
+    at Object.onceWrapper (events.js:299:28)
+    at IncomingMessage.emit (events.js:215:7)
+    at IncomingMessage.EventEmitter.emit (domain.js:476:20)
+    at endReadableNT (_stream_readable.js:1183:12)
+    at processTicksAndRejections (internal/process/task_queues.js:80:21)
 [error] 
-[error] Error: An unexpected error has occurred.
-[debug] [2020-05-12T20:18:03.063Z] ----------------------------------------------------------------------
-[debug] [2020-05-12T20:18:03.065Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jacqu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2020-05-12T20:18:03.065Z] CLI Version:   8.2.0
-[debug] [2020-05-12T20:18:03.066Z] Platform:      win32
-[debug] [2020-05-12T20:18:03.066Z] Node Version:  v12.13.0
-[debug] [2020-05-12T20:18:03.067Z] Time:          Tue May 12 2020 13:18:03 GMT-0700 (Pacific Daylight Time)
-[debug] [2020-05-12T20:18:03.067Z] ----------------------------------------------------------------------
-[debug] [2020-05-12T20:18:03.067Z] 
-[debug] [2020-05-12T20:18:03.072Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2020-05-12T20:18:03.072Z] > authorizing via signed-in user
-[info] 
-     ######## #### ########  ######## ########     ###     ######  ########
-     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
-     ######    ##  ########  ######   ########  #########  ######  ######
-     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
-     ##       #### ##     ## ######## ########  ##     ##  ######  ########
-
-You're about to initialize a Firebase project in this directory:
-
-  D:\GitHub\BeLively
-
-[info] 
-=== Project Setup
-[info] 
-[info] First, let's associate this project directory with a Firebase project.
-[info] You can create multiple project aliases by running firebase use --add, 
-[info] but for now we'll just set up a default project.
-[info] 
-[debug] [2020-05-12T20:45:40.343Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
- 
-[debug] [2020-05-12T20:45:40.740Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 12 May 2020 20:45:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[error] Error: Failed to create Google Cloud project. See firebase-debug.log for more info.
