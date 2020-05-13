@@ -1,10 +1,10 @@
 var main_email;
 
 function SignIn() {
-    email = document.getElementById("sign_in_email").value;
-    password = document.getElementById("sign_in_password").value;
+
+    var email = document.getElementById("sign_in_email").value;
+    var password = document.getElementById("sign_in_password").value;
     SetEmail(email);
-    var type;
 
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then(function () {
@@ -17,7 +17,7 @@ function SignIn() {
 
             db.collection("Students").doc(email).get().then(function (doc) {
                 if (doc.data().Type == "Student") {
-                    location.href = "Student_homepage.html";
+                    location.href = "student_homepage.html";
                 }
             });
 
