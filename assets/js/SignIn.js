@@ -17,7 +17,7 @@ function SignIn() {
 
             db.collection("Students").doc(email).get().then(function (doc) {
                 if (doc.data().Type == "Student") {
-                    location.href = "Student_homepage.html";
+                    location.href = "student_homepage.html";
                 }
             });
 
