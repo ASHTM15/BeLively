@@ -4,28 +4,23 @@ function SignIn() {
     email = document.getElementById("sign_in_email").value;
     password = document.getElementById("sign_in_password").value;
     SetEmail(email);
+    var type;
 
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then(function () {
             var db = firebase.firestore();
-            db.collection("Instructors").doc(email).get()
-                .then(function (doc) {
-                    if (doc) {
-                        location.href = "instructor_homepage.html";
-                    }
-                }).catch(function (error) {
-                    console.log("Error getting document:", error);
-                });
+            db.collection("Instructors").doc(email).get().then(function (doc) {
+                if (doc.data().Type == "Instructor") {
+                    location.href = "instructor_homepage.html";
+                }
+            });
 
-            db.collection("Students").doc(email).get()
-                .then(function (doc) {
-                    if (doc) {
-                        location.href = "student_homepage.html";
-                    }
-                }).catch(function (error) {
-                    console.log("Error getting document:", error);
-                });
-            
+            db.collection("Students").doc(email).get().then(function (doc) {
+                if (doc.data().Type == "Student") {
+                    location.href = "Student_homepage.html";
+                }
+            });
+
         }).catch(function (error) {
             // Handle Errors here.
             var errorCode = error.code;

@@ -36,6 +36,16 @@ function SignUp() {
                 // ...
             });
 
+        db.collection("Instructors").doc(email).set({
+            Type: "Instructor"
+        })
+        .then(function () {
+
+        })
+        .catch(function (error) {
+            console.error("Error creating database entry: ", error);
+        });
+
         db.collection("Instructors").doc(email).collection("Profile").doc(employee_id).set({
             Name: name,
             Email: email,

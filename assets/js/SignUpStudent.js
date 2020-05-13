@@ -33,7 +33,15 @@ function SignUp() {
                 alert(errorMessage);
                 // ...
             });
+        db.collection("Students").doc(email).set({
+            Type: "Student"
+        })
+        .then(function () {
 
+        })
+        .catch(function (error) {
+            console.error("Error creating database entry: ", error);
+        });
 
         db.collection("Students").doc(email).collection("Profile").doc(name).set({
             Name: name,
@@ -46,7 +54,7 @@ function SignUp() {
             })
             .catch(function (error) {
                 console.error("Error creating database entry: ", error);
-            });
+         });
 
                 
     }
