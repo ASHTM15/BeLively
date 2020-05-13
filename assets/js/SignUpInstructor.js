@@ -2,10 +2,11 @@ var instructor_email;
 
 function SignUp() {
 
-    name = document.getElementById("student_name").value;
-    email = document.getElementById("student_email").value;
-    password = document.getElementById("password").value;
-    password_confirm = document.getElementById("password_confirm").value;
+    name = document.getElementById("name_instructor").value;
+    email = document.getElementById("email_instructor").value;
+    password = document.getElementById("password_instructor").value;
+    password_confirm = document.getElementById("password_2_instructor").value;
+    employee_id = document.getElementById("instructor_ID").value;
 
     if (password != password_confirm) {
         alert("Passwords do not match");
@@ -18,11 +19,12 @@ function SignUp() {
     else {
 
         var db = firebase.firestore();
+
         SetEmail(email);
 
         firebase.auth().createUserWithEmailAndPassword(email, password)
             .then(function () {
-                
+
             })
 
             .catch(function (error) {
@@ -34,24 +36,23 @@ function SignUp() {
                 // ...
             });
 
-        db.collection("Students").doc(email).collection("Profile").doc(name).set({
+        db.collection("Instructors").doc(email).collection("Profile").doc(employee_id).set({
             Name: name,
             Email: email,
             Number: "",
-            Address: ""
+            Address: "",
+            ID: employee_id
         })
             .then(function () {
-                window.location.href = 'student_homepage.html';
+                window.location.href = 'instructor_homepage.html';
             })
             .catch(function (error) {
                 console.error("Error creating database entry: ", error);
             });
-
-                
     }
 };
 
 function SetEmail(email) {
     instructor_email = email;
-    localStorage.setItem("student_email", instructor_email);
+    localStorage.setItem("instructor_email", instructor_email);
 };

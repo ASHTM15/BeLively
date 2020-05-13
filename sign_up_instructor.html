@@ -26,32 +26,32 @@
                             <div class="col-6">
                                 <div class="row">
                                     <div class="col-6">
-                                        <input type="text" name="name" id="name_instructor" value="" placeholder="Name" />
+                                        <input type="text" name="name" id="name_instructor" placeholder="Name" />
                                     </div>
 
                                     <div class="col-6">
-                                        <input type="email" name="email_instructor" id="email_instructor" value="" placeholder="Email" />
+                                        <input type="email" name="email_instructor" id="email_instructor" placeholder="Email" />
                                     </div>
                                 </div>
                                 <h3></h3>
                                 <div class="row">
                                     <div class="col-6">
-                                        <input type="text" name="password" id="password_instructor" value="" placeholder="Password" />
+                                        <input type="text" name="password" id="password_instructor" placeholder="Password" />
                                     </div>
 
                                     <div class="col-6">
-                                        <input type="text" name="confirm_password" id="password_2_instructor" value="" placeholder="Confirm Password" />
+                                        <input type="text" name="confirm_password" id="password_2_instructor" placeholder="Confirm Password" />
                                     </div>
                                 </div>
                                 <h3></h3>
                                 <div class="col-6">
                                     <div class="col-6">
-                                        <input type="text" name="instructor_ID" id="instructor_ID" value="" placeholder="Identification Number" />
+                                        <input type="text" name="instructor_ID" id="instructor_ID" placeholder="Identification Number" />
                                     </div>
                                 </div>
                                 <h3></h3>
                                 <ul class="actions">
-                                    <li><a class="button primary" onclick="SignUp; return false;">Submit</a></li>
+                                    <li><button class="button primary" onclick="SignUp(); return false;">Submit</button></li>
                                 </ul>
 
                             </div>
@@ -68,7 +68,7 @@
         <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
 
         <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+        https://firebase.google.com/docs/web/setup#available-libraries -->
         <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-analytics.js"></script>
         <!-- Add Firebase products that you want to use -->
         <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
@@ -90,7 +90,6 @@
             // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
             firebase.analytics();
-            var db = firebase.firestore();
         </script>
         <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
@@ -98,8 +97,7 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-        <script src="assets/js/SignUpStudent.js"></script>
-        
+        <script src="assets/js/SignUpInstructor.js"></script>
 
     </body>
 </html>
