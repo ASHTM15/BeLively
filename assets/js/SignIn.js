@@ -39,3 +39,14 @@ function SetEmail(email) {
     main_email = email;
     localStorage.setItem("user_email", main_email);
 };
+
+function Logout() {
+    localStorage.clear();
+    firebase.auth().signOut().then(function () {
+        // Sign-out successful.
+    }).catch(function (error) {
+        // An error happened.
+    });
+
+    location.href = "index.html";
+};
