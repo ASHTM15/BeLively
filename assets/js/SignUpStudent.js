@@ -34,6 +34,7 @@ function SignUp() {
                 // ...
             });
 
+
         db.collection("Students").doc(email).collection("Profile").doc(name).set({
             Name: name,
             Email: email,
