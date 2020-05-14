@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-<body class="is-preload">
+<body onload="videos();" class="is-preload">
 
     <!-- Wrapper -->
     <div id="wrapper">
@@ -36,28 +36,32 @@
                 <section>
                     <header class="main">
                         <h1>Workout Classes</h1>
-                        <h3>Select Category</h3>
-                        <div class="row">
-                            <div class="col-6">
-                                <select name="video-category" id="video-category">
-                                    <option value="All">- Category -</option>
-                                    <option value="Weight Training" href="instructor_homepage.html">Weight Training</option>
-                                    <option value="Crossfit">Crossfit</option>
-                                    <option value="Yoga">Yoga</option>
-                                    <option value="Bootcamp">Bootcamp</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
-                            <div class="col-6">
-                                <a class="button medium" onclick="videos(); return false;">Select</a>
-                            </div>
-                        </div>
                     </header>
-                   
+
+                    <h3>Select Category</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <select name="video-category" id="video-category">
+                                <option value="All">- Category -</option>
+                                <option value="Weight Training" href="instructor_homepage.html">Weight Training</option>
+                                <option value="Crossfit">Crossfit</option>
+                                <option value="Yoga">Yoga</option>
+                                <option value="Bootcamp">Bootcamp</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <a class="button medium" onclick="videos(); return false;">Select</a>
+                        </div>
+                    </div>
+                    <h1></h1>
+
                     <d1 id="videos">
-                    
+
                     </d1>
                     <div></div>
+
+
 
                 </section>
 
