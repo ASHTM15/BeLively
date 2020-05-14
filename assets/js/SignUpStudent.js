@@ -1,4 +1,4 @@
-var instructor_email;
+var main_email;
 
 function SignUp() {
 
@@ -61,6 +61,6 @@ function SignUp() {
 };
 
 function SetEmail(email) {
-    instructor_email = email;
-    localStorage.setItem("student_email", instructor_email);
+    main_email = email;
+    localStorage.setItem("user_email", main_email);
 };
