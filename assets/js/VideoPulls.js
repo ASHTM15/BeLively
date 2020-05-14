@@ -2,12 +2,16 @@ const video_feed = document.querySelector('#videos');
 
 
 function renderVideos(doc) {
-    let li = document.createElement('div');
-    li.setAttribute('data-id', doc.id);
-    li.setAttribute('id', 'video_feed');
-    var newVideo = document.createTextNode(doc.data().HTML);
-    li.appendChild(newVideo);
-    video_feed.appendChild(li);
+    let div = document.createElement('div');
+    let li = document.createElement('iframe');
+    li.setAttribute('width', "700");
+    li.setAttribute('height', "400");
+    li.setAttribute('src', doc.data().HTML);
+    li.setAttribute('frameborder', "0");
+    li.setAttribute('allow', "accelerometer; autoplay; encrypted - media; gyroscope; picture -in -picture");
+    li.setAttribute('allowfullscreen', true);
+    div.appendChild(li);
+    video_feed.appendChild(div);
 }
 
 

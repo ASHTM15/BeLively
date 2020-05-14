@@ -2,10 +2,9 @@ function UploadVideo() {
     var category = document.getElementById("video-category").value;
     var html = document.getElementById("youtube-html").value;
     var user_email = localStorage.getItem("user_email");
-    const regex = /<.*>/;
+    const regex = /https(...){15}/;
 
-    html = html.replace(regex, html);
-    alert(html);
+    html = html.match(regex);
 
     var date = new Date();
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -17,7 +16,7 @@ function UploadVideo() {
 
     db.collection("Videos").doc("All").collection(months[date.getMonth()]).doc("Day: " + numbers[date.getDate()] + ", " + numbers[date.getHours()] + ":" + numbers[date.getMinutes()] + ":" + numbers[date.getSeconds()]).set({
         Category: category,
-        HTML: html,
+        HTML: html[0],
         User: user_email,
         Timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
