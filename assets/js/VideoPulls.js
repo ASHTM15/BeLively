@@ -16,7 +16,7 @@ function renderVideos(doc) {
 
 function videos() {
     var db = firebase.firestore();
-    var user_email = localStorage.getItem("user_Email");
+    var user_email = localStorage.getItem("user_email");
     var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     var date = new Date();
     var category = document.getElementById("video-category").value;
@@ -33,4 +33,21 @@ function DeleteVideos() {
     location.reload();
     document.getElementById("video_feed").reset();
     videos();
+};
+
+function MyVideos() {
+    var db = firebase.firestore();
+    var user_email = localStorage.getItem("user_email");
+    var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    var date = new Date();
+    alert(user_email);
+
+    db.collection("Videos").doc("All").collection(months[date.getMonth()]).orderBy("Timestamp", "desc").get().then(snapshot => {
+        snapshot.docs.forEach(doc => {
+            if (doc.data().User == user_email) {
+                renderVideos(doc);
+                console.log(doc.id);
+            }
+        })
+    })
 };
