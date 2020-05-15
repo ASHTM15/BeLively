@@ -2,7 +2,7 @@ function UploadVideo() {
     var category = document.getElementById("video-category").value;
     var html = document.getElementById("youtube-html").value;
     var user_email = localStorage.getItem("user_email");
-    const regex = /https(...){15}/;
+    const regex = /https(...){12}/;
 
     html = html.match(regex);
 
@@ -23,7 +23,7 @@ function UploadVideo() {
 
     db.collection("Videos").doc(category).collection(months[date.getMonth()]).doc("Day: " + numbers[date.getDate()] + ", " + numbers[date.getHours()] + ":" + numbers[date.getMinutes()] + ":" + numbers[date.getSeconds()]).set({
         Category: category,
-        HTML: html,
+        HTML: html[0],
         User: user_email,
         Timestamp: firebase.firestore.FieldValue.serverTimestamp()
     })
@@ -33,5 +33,4 @@ function UploadVideo() {
         .catch(function (error) {
             console.error("Error uploading video: ", error);
    });
-    
 };
