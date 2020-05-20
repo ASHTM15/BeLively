@@ -2,6 +2,8 @@ function UploadVideo() {
     var category = document.getElementById("video-category").value;
     var html = document.getElementById("youtube-html").value;
     var user_email = localStorage.getItem("user_email");
+    var video_name = document.getElementById("video-name").value;
+    var instructor_name = document.getElementById("instructor-name").value;
     const regex = /https(...){12}/;
 
     html = html.match(regex);
@@ -18,6 +20,8 @@ function UploadVideo() {
         Category: category,
         HTML: html[0],
         User: user_email,
+        Video_Name: video_name,
+        Instructor_Name: instructor_name,
         Timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
 
@@ -25,6 +29,8 @@ function UploadVideo() {
         Category: category,
         HTML: html[0],
         User: user_email,
+        Video_Name: video_name,
+        Instructor_Name: instructor_name,
         Timestamp: firebase.firestore.FieldValue.serverTimestamp()
     })
         .then(function () {

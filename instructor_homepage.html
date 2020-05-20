@@ -38,20 +38,25 @@
                         <h1>Workout Classes</h1>
                     </header>
 
-                    <h3>Select Category</h3>
-                    <div class="row">
-                        <div class="col-6">
-                            <select name="video-category" id="video-category">
-                                <option value="All">- Category -</option>
-                                <option value="Weight Training">Weight Training</option>
-                                <option value="Crossfit">Crossfit</option>
-                                <option value="Yoga">Yoga</option>
-                                <option value="Bootcamp">Bootcamp</option>
-                                <option value="Other">Other</option>
-                            </select>
-                        </div>
-                        <div class="col-6">
-                            <a class="button medium" onclick="DeleteVideos(); return false;">Select</a>
+                    <div class="major">
+                        <h2>Search Videos</h2>
+                        <div class="row">
+                            <div class="col-4">
+                                <input type="text" name="search-name" id="search-name" placeholder="Search Instructor Name" />
+                            </div>
+                            <div class="col-4">
+                                <select name="video-category" id="video-category">
+                                    <option value="All">- Category -</option>
+                                    <option value="Weight Training">Weight Training</option>
+                                    <option value="Crossfit">Crossfit</option>
+                                    <option value="Yoga">Yoga</option>
+                                    <option value="Bootcamp">Bootcamp</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-4">
+                                <a class="button medium" onclick="DeleteVideos(); return false;">Select</a>
+                            </div>
                         </div>
                     </div>
                     <h1></h1>
