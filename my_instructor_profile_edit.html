@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-<body onload="getUserProfile();" class="is-preload">
+<body class="is-preload">
 
     <!-- Wrapper -->
     <div id="wrapper">
@@ -35,12 +35,40 @@
                 <!-- Content -->
                 <section>
                     <header class="main">
-                        <h2 style="font-size: 70px">My Profile</h2>
+                        <h2 style="font-size: 70px">Edit My Profile - Instructor</h2>
                     </header>
-                    <dt id="profile_user"></dt>
                     <h1></h1>
+                    <form method="post" action="#">
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" name="name" id="name_instructor" placeholder="Name" />
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" name="id" id="id" placeholder="Enter Your Work ID" />
+                                </div>
+                            </div>
+                            <h3></h3>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" name="address" id="address" placeholder="Address" />
+                                </div>
+
+                                <div class="col-6">
+                                    <input type="text" name="number" id="number" placeholder="Phone Number" />
+                                </div>
+                            </div>
+
+                            <h3></h3>
+                            <h3></h3>
+                            <ul class="actions">
+                                <li><button class="button primary" onclick="editInstructorProfile(); return false;">Submit</button></li>
+                            </ul>
+
+                        </div>
+                    </form>
                     <h1></h1>
-                    <a class="button large" id="editSave" href="my_student_profile_edit.html">Edit</a>
+
 
                 </section>
 
@@ -57,10 +85,10 @@
                         <h2 style="font-size: 40px">Menu</h2>
                     </header>
                     <ul>
-                        <li><a style="font-size: 20px" href="student_homepage.html">Workout Classes</a></li>
-                        <li><a style="font-size: 20px" href="my_tracker.html">My Tracker</a></li>
-                        <li><a style="font-size: 20px" href="my_student_profile.html">My Profile</a></li>
-                        <li><a style="font-size: 20px" href="my_equipment.html">My Equipment</a></li>
+                        <li><a style="font-size: 20px" href="instructor_homepage.html" onclick="videos();">Workout Classes</a></li>
+                        <li><a style="font-size: 20px" href="my_videos.html">My Videos</a></li>
+                        <li><a style="font-size: 20px" href="upload_class.html">Upload A Class</a></li>
+                        <li><a style="font-size: 20px" href="my_instructor_profile.html">My Profile</a></li>
                     </ul>
                 </nav>
 
@@ -124,8 +152,8 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/SignIn.js"></script>
-    <script src="assets/js/StudentProfile.js"></script>
-    <script src="assets/js/StudentProfileEdit.js"></script>
+    <script src="assets/js/VideoPulls.js"></script>
+    <script src="assets/js/InstructorProfile.js"></script>
 
 
 </body>
