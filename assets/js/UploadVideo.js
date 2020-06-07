@@ -4,6 +4,7 @@ function UploadVideo() {
     var user_email = localStorage.getItem("user_email");
     var video_name = document.getElementById("video-name").value;
     var instructor_name = document.getElementById("instructor-name").value;
+    var discord_link = document.getElementById("discord-link").value
     const regex = /https(...){12}/;
 
     html = html.match(regex);
@@ -22,6 +23,7 @@ function UploadVideo() {
         User: user_email,
         Video_Name: video_name,
         Instructor_Name: instructor_name,
+        Discord_Link: discord_link,
         Timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
 
@@ -31,6 +33,7 @@ function UploadVideo() {
         User: user_email,
         Video_Name: video_name,
         Instructor_Name: instructor_name,
+        Discord_Link: discord_link,
         Timestamp: firebase.firestore.FieldValue.serverTimestamp()
     })
         .then(function () {
@@ -38,5 +41,7 @@ function UploadVideo() {
         })
         .catch(function (error) {
             console.error("Error uploading video: ", error);
-   });
+        });
+
+   
 };

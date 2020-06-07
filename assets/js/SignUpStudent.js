@@ -47,7 +47,9 @@ function SignUp() {
             Name: name,
             Email: email,
             Number: "",
-            Address: ""
+            Address: "",
+            Instructor: "Bruce Lee",
+            Instructor_Email: "bruce_lee@gmail.com"
         })
             .then(function () {
                 window.location.href = 'student_homepage.html';
