@@ -4,12 +4,16 @@
 
 A work out app for people who do not have time or money to work out.
 
-**Elevator Pitch**
 ________________________________________
+
+
+**Elevator Pitch**
+
 BeLively offers the same professional instruction of a gym all conveniently condensed into an app. There are many reasons why people cannot go to the gym such as living too far away from a gym, having gym anxiety, and not being able to afford a gym membership. Our app offers our users the opportunity to work out with a certified virtual trainer, whether it is cardio, leg day, or yoga class, all from the comfort of home. Our fees are less expensive than any studio while still providing the same level of professionalism and expertise. Users can learn a new workout with an encouraging instructor, or create a daily routine while tracking their progress with our user friendly analytics. Our app BeLively solves these problems and keeps America healthy!
 
-Lean Start-up Canvas & Justification
 ________________________________________
+
+**Lean Start-up Canvas & Justification**
 
 **1.** **Problem** **:** 
 
@@ -91,7 +95,6 @@ d. We will provide equipment rentals for customers who do not have equipment of 
 **9.** **Revenue Stream** **:**
 
   * Students will pay monthly subscriptions of $19.99 for our platform. They have the additional option to rent equipment from us for $4.99 a month. 
-
 
 ________________________________________
 
