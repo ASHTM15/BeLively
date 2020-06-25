@@ -13,6 +13,9 @@ BeLively offers the same professional instruction of a gym all conveniently cond
 
 ________________________________________
 
+![BeLively](https://i.imgur.com/4YUOyAi.png)
+________________________________________
+
 **Lean Start-up Canvas & Justification**
 
 **1.** **Problem** **:** 
@@ -112,7 +115,6 @@ However, after discussing the pain points of our customers, our team realized th
 Additionally, the target market for our application includes instructors as well.  For example, current studio instructors who may not be able to afford an entire studio but already have a base clientele can benefit from our service. Private trainers are also able to gain traction without the need to actually go to their client’s homes. 
 Customer research and discovery allowed us to gear our application towards those who would benefit from an affordable, subscription-based remote gym membership. It helped us figure out the pain points of our target market and we also made sure to interview a variety of people, not just students like us. With that, we are able to make our application more useful towards a large group of people and do our part in prioritizing healthy lifestyles. 
 
- 
 **Go To Market Study**
 
  Our marketing strategy will initially consist of two things: social media and word of mouth marketing. We would create dedicated social media accounts on Facebook, Instagram, and Twitter and post on those accounts, as well as posting on personal accounts so that our current friends and followers will see them. 
@@ -131,8 +133,8 @@ The cost will largely depend on their number of followers, so we’d first focus
 This application follows a two-level architecture, displayed in the key figure below. Users log into the platform, and each user has videos curated to them which are stored within the database. The information provided to them is unique per user. In the first level, videos are retrieved from the internet and filtered for the user. Then, users are able to download their own unique content.
 
 ________________________________________
-
- 
+![Workout Classes](https://i.imgur.com/3m6mBBR.png)
+________________________________________
 **Development** 
 
   Belively’s overall build was created by writing HTML and JavaScript from scratch and it’s database is hosted by Google’s Firebase Firestore platform. The website is stored in a GitHub repository and hosted by go daddy for our live site at www.belively.xyz. 
